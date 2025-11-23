@@ -112,8 +112,8 @@ class Emails:
         else:
             print("Failed to update secret.")
             print("Status code:", response.status_code)
-            print("Response:", response.text)
-            raise Exception(f"Failed to update Secret. Code: {response.status_code}, Text: {response.text}")
+            print("Response: <response text omitted to avoid leaking sensitive information>")
+            raise Exception(f"Failed to update Secret. Code: {response.status_code}")
 
 
     def get_initial_tokens(self):
